@@ -12,10 +12,12 @@
 
     ## Usage
     The following video demonstrates how to use this project.
-    https://watch.screencastify.com/v/g9y2eT3m5XoyBVzMTQN4 
+    https://watch.screencastify.com/v/g9y2eT3m5XoyBVzMTQN4
+
+     <iframe src="https://drive.google.com/file/d/1dJE38eh--f9FbxAKHrm8SbPsQP0NbcQj/preview" width="640" height="480"></iframe> 
 
     ## License
-    
+
     MIT License
 
     Copyright (c) 2022 Kelsie Szost
