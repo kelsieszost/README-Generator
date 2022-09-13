@@ -21,9 +21,6 @@ function generateReadMe(answers) {
     ## License
     ${answers.license}
 
-    ## Contributors
-    ${answers.contributors}
-
     `
 }
 
