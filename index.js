@@ -89,7 +89,34 @@ const generateReadMe = require("./utils/generateMarkdown");
                     return false;
                 }
                 }
-        }
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Enter your github username',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username.');
+                    return false; 
+                }
+            } 
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your email address',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email address.');
+                    return false; 
+                }
+            }
+    
+        },
     ]);
 }
 
