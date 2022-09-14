@@ -13,7 +13,7 @@
   * Questions
   
   ## Installation
-  ${data.install}
+  ${data.installation}
 
   ## Usage 
   ${data.usage}
