@@ -13,7 +13,7 @@ const generateReadMe = require("./utils/generateMarkdown");
         return inquirer.prompt([
         {
             type: "input",
-            name: "projectTitle",
+            name: "title",
             message: "Enter project title",
             validate: (nameInput) => {
                 if (nameInput) {

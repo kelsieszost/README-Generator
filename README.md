@@ -1,4 +1,4 @@
-# undefined
+  ## Professional README Generator
   
   ## Description 
   This project was created to generate a professional README file by responding to questions within the terminal.
