@@ -3,36 +3,10 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { default: Choices } = require('inquirer/lib/objects/choices');
 
+//Link to Readme generator 
+const generateReadMe = require("./utils/generateMarkdown");
 
-function generateReadMe(answers) {
-    return `
 
-    ## Project Title
-    ${answers.projectTitle}
-
-    ## Table of Contents
-    ${tab.data}
-    
-    ## Description
-    ${answers.description}
-
-    ## Installation
-    ${answers.installation}
-
-    ## Usage
-    ${answers.usage}
-
-    ## License
-    ${answers.license}
-
-    ## Contributors
-    ${answers.contributors}
-
-    ## Testing
-    ${answers.testing}
-
-    `
-}
 
 // Array of questions for user input
     const questions = () => { 
@@ -40,41 +14,81 @@ function generateReadMe(answers) {
         {
             type: "input",
             name: "projectTitle",
-            message: "Enter project title"
+            message: "Enter project title",
+            validate: (nameInput) => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please enter your project title.");
+                    return false;
+                }
+                }
         },
         {
             type: "input",
             name: "description",
             message: "Describe your project",
+            validate: (nameInput) => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please describe your project.");
+                    return false;
+                }
+                }
         },
-        {
-            type: "list",
-            name: "Table Of Contents",
-            message: "Installation"
-        },
-       
         {
             type: "input",
             name: "installation",
-            message: "Describe the installation process"
+            message: "Describe the installation process",
+            validate: (nameInput) => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please explain your project installation process.");
+                    return false;
+                }
+                }
         },
         {
             type: "input",
             name: "usage",
-            message: "Describe the project usage"
+            message: "Describe the project usage",
+            validate: (nameInput) => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please describe your project usage.");
+                    return false;
+                }
+                }
         },
         {
             type: "list",
             name: "license",
             message: "Which license applies to your project?",
-            choices: [
-                    "MIT",
-                    "Apache",
-                    "Mozilla",
-                    "Open Source", 
-                    "Restrictive",
-                    "Dual"   
-                ]
+            choices: ["MIT","Apache","GNU"],
+            validate: (nameInput) => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please choose one of the options.");
+                    return false;
+                }
+                }
+            },
+        {
+            type: "input",
+            name: "contributors",
+            message: "Who contributed to this project?",
+            validate: (nameInput) => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please list your contributors.");
+                    return false;
+                }
+                }
         }
     ]);
 }
@@ -84,7 +98,7 @@ const writeFile = data => {
         // if there is an error 
         if (err) {
             console.log(err);
-            return;
+            return console.log("Please enter your answer.");
         // when the README has been created 
         } else {
             console.log("Your README has been successfully created!")
