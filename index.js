@@ -1,6 +1,7 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { default: Choices } = require('inquirer/lib/objects/choices');
 
 
 function generateReadMe(answers) {
@@ -8,6 +9,9 @@ function generateReadMe(answers) {
 
     ## Project Title
     ${answers.projectTitle}
+
+    ## Table of Contents
+    ${tab.data}
     
     ## Description
     ${answers.description}
@@ -20,6 +24,12 @@ function generateReadMe(answers) {
 
     ## License
     ${answers.license}
+
+    ## Contributors
+    ${answers.contributors}
+
+    ## Testing
+    ${answers.testing}
 
     `
 }
@@ -38,6 +48,12 @@ function generateReadMe(answers) {
             message: "Describe your project",
         },
         {
+            type: "list",
+            name: "Table Of Contents",
+            message: "Installation"
+        },
+       
+        {
             type: "input",
             name: "installation",
             message: "Describe the installation process"
@@ -48,9 +64,17 @@ function generateReadMe(answers) {
             message: "Describe the project usage"
         },
         {
-            type: "input",
+            type: "list",
             name: "license",
-            message: "Which license applies to your project?"
+            message: "Which license applies to your project?",
+            choices: [
+                    "MIT",
+                    "Apache",
+                    "Mozilla",
+                    "Open Source", 
+                    "Restrictive",
+                    "Dual"   
+                ]
         }
     ]);
 }
