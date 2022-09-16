@@ -88,7 +88,20 @@ const generateReadMe = require("./utils/generateMarkdown");
                     console.log("Please list your contributors.");
                     return false;
                 }
+            }
+        },
+        {
+            type: 'input',
+            name: 'testing',
+            message: 'Testing instructions',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter testing instructions.');
+                    return false;
                 }
+            }
         },
         {
             type: 'input',
@@ -115,8 +128,7 @@ const generateReadMe = require("./utils/generateMarkdown");
                     return false; 
                 }
             }
-    
-        },
+        }
     ]);
 }
 
