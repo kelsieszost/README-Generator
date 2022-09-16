@@ -1,7 +1,7 @@
-  ## Professional README Generator
+# jjj
   
   ## Description 
-  This project was created to generate a professional README file by responding to questions within the terminal.
+  jjj
   
   ## Table of Contents
 
@@ -12,17 +12,16 @@
   * Questions
   
   ## Installation
-  To install this project, please clone it from the github repository and download Node.
+  jjj
 
   ## Usage 
-  To use this project simply answer the questions displayed in the terminal.
-  https://watch.screencastify.com/v/9XitZM2OjfDl3IoXlmR5
+  jj
 
   ## License 
   This project is licensed with MIT
 
   ## Contributing 
-  There are no other contributors to this project.
+  jjj
 
   ## Questions
-  For questions regarding this project, please email me at owner@kelsieszost.design. To view more of my projects visit https://github.com/https://github.com/kelsieszost.
+  For questions regarding this project, please email me at jjjj. To view more of my projects visit https://github.com/jjjj.
