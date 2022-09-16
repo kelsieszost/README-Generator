@@ -21,6 +21,18 @@ function renderLicenseLink(license) {
     return `
     [${license}](https://choosealicense.com/licenses/agpl-3.0/)
     `
+  } else if (license === 'no license') {
+    return `
+    no license to display
+    `
+  }
+}
+
+function renderLicenseSection(license) {
+  if (license !== 'no license to display') {
+    return `
+    This application is covered under the following license: ${license}
+    `
   }
 }
 
@@ -32,11 +44,12 @@ const generateMarkdown = data => {
   
   ## Table of Contents
 
-  * Installation
-  * Usage
-  * License
-  * Contributing
-  * Questions
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributors)
+  * [Testing](#testing)
+  * [Questions](#questions)
   
   ## Installation
   ${data.installation}
