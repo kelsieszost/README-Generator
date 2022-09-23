@@ -1,7 +1,7 @@
-# jjjj
+# Professional ReadMe Generator
   
   ## Description 
-  jjjjj
+  This project is used to create a professional README file.
   
   ## Table of Contents
 
@@ -13,19 +13,21 @@
   * [Questions](#questions)
   
   ## Installation
-  jjjjjj
+  Please install this project by cloning it to your local computer on GitHub.
 
   ## Usage 
-  jjjjjj
+  To use this project, open the terminal and answer the questions when prompted.
+
+  https://watch.screencastify.com/v/Ei8g5Y6OVpj4UM3zCwno 
 
   ## License 
   This project is licensed with MIT
 
   ## Contributing 
-  jjjjj
+  There are no other contributors to this project.
 
   ## Testing
-  jjjjjj
+  No testing.
 
   ## Questions
-  For questions regarding this project, please email me at jjjjj. To view more of my projects visit https://github.com/jjjjj.
+  For questions regarding this project, please email me at owner@kelsieszost.design. To view more of my projects visit https://github.com/kelsieszost
